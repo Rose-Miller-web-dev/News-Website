@@ -1,0 +1,31 @@
+.navbar{
+    background-color: #05386B;
+}
+
+.navbar-brand{
+    font-weight: bold;
+    color: #EDF5E1;
+}
+
+.nav-link{
+    color: #EDF5E1;
+}
+
+a{
+    color: #EDF5E1;
+}
+
+.dropdown-menu{
+    background-color: #05386B;
+}
+
+body::before{
+    display: block;
+    content: '';
+}
+
+.foot{
+    background-color: #05386B;
+    position: relative;
+    bottom: 100px;
+}

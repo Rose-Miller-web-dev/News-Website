@@ -1,0 +1,177 @@
+body::before{
+    display: block;
+    content: '';
+}
+
+body{
+    background-color: beige;
+    padding-right: 0px;
+}
+
+.header-picture{
+    margin: 8%;
+    height: 500px;
+    position: relative;
+    left: 5%;
+}
+
+.header-content{
+    position: relative;
+    left: 8%;
+}
+
+.header-data{
+    position: relative;
+    top: 80px;
+    left: 5%;
+}
+
+.header-topic{
+    color: #05386B;
+    font-family: "Inter", sans-serif;
+    font-weight: bold;
+}
+
+.header-link{
+    font-size: larger;
+    position: relative;
+    margin: 8%;
+} 
+
+.hot-news-title-box{
+    margin-left: 8%;
+}
+
+.bold-text{
+    color: #05386B;
+    font-weight: bold;
+    margin-left: 2%;
+}
+
+.top_img{
+    width: 100%;
+    height: 300px;
+}
+
+.col{
+    align-items: center;
+    position: relative;
+    left: 12%;
+}
+
+.row{
+    align-items: center;
+}
+
+.see-more{
+    margin-left: 8%;
+    position: relative;
+    bottom: 8%;
+}
+
+.layer {
+    background-color: rgba(5, 56, 107, 0.6);
+    position: absolute;
+    top: 55%;
+    right: 9.5%;
+    width: 80%;
+    height: 45%;
+}
+
+
+/*
+.header-title::after{
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: 50%;
+    width: 0%;
+    height: 1.5px;
+    background: #EDF5E1;
+    transition: 0.4s ease-out;
+    cursor: pointer;
+}
+
+.header-title:hover::after{
+    left:0;
+    width:100%;
+}
+*/
+.headline-info{
+    background-color: #05386B;
+    cursor: pointer;
+}
+
+.headline-title{
+    color: #EDF5E1;
+    cursor: pointer;
+}
+
+.headline-link{
+    color: azure;
+}
+
+a{
+    text-decoration: none;
+}
+/*
+@media(min-width:576px){   
+    .header-picture{
+        height: 300px;
+    }
+
+    .see-more{
+        position: relative;
+        left: 300px;
+    }
+}
+@media(max-width:790px){  
+    .header-picture{
+        height: 200px;
+    }
+
+    .see-more{
+        position: relative;
+        left: 180px;
+    }
+}
+@media(min-width:790px){   
+    .header-picture{
+        height: 500px;
+        position: relative;
+        top: 120px;
+    }
+
+    .header-topic{
+        position: relative;
+        bottom: 550px;
+        right: 0%;
+        width: 20%;
+    }
+
+    .bold-text{
+        position: relative;
+        bottom: 100px;
+    }
+
+    .see-more{
+        position: relative;
+        left: 600px;
+    }
+
+}  */
+
+.rectangle{
+    background-color: #05386B;
+    height: 200px;
+    width: 4px;
+    
+}
+
+.foot{
+    background-color: #05386B;
+}
+
+.headline-container{
+    width: 80%;
+}

@@ -1,0 +1,96 @@
+<html lang="en">
+    <head></head>
+    <body>
+    <!--<div class="contain-fluid">
+            <div id="carouselExampleDark" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner p-5">
+                  <div class="carousel-item active"
+                   data-bs-interval="5000"
+                    *ngFor="let pic of top_headlines; let i=index"
+                     [ngClass]="{active:i===0}">
+                     <div class="header">
+                        <img class="d-block header-img img-fluid align-self-center" *ngIf="pic.urlToImage" src="{{ pic.urlToImage }}"
+                        alt="First slide" 
+                        [routerLink]="['movie',pic.id]"
+                       >
+                       <h3>{{ pic.name }}</h3>
+                       <div class="layer"></div>
+                       <h3 class="header-title">{{ pic.name }}</h3>
+                     </div>
+                    <div class="carousel-caption d-none d-sm-block p-4 rounded-2">
+                        <h2 class="" [routerLink]="['#',pic.id]">{{ pic.name }}</h2 >
+                    </div>
+                  </div>
+                </div>
+                <a class="carousel-control-prev" data-bs-target="#carouselExampleDark" type="button" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </a>
+                <a class="carousel-control-next" data-bs-target="#carouselExampleDark" role="button" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </a>
+              </div>
+          </div>
+          --> 
+        <div class="container-fluid">
+          <div class="header p-2 d-flex">
+            
+            <div class="header-data">
+              <div class="header-title-box">
+                <div class="rectangle" style="position: absolute; height: 22%;"></div>
+                <h2 class="header-topic m-5">{{ top_headlines[0].title }}</h2>
+              </div>
+                <h4 class="header-content">{{ top_headlines[0].content }}</h4>
+                <a  target="_blank" class="header-link" href="#">Read More</a>
+              </div>
+              <img src="{{ top_headlines[0].urlToImage }}" class="header-picture w-50" alt="">
+            </div>
+          </div>
+          <div class="container-fluid">
+            <div class="hot-news-title-box d-flex">
+              <div class="rectangle" style="position: absolute; height: 13%;"></div>
+              <h1 class="bold-text">Top<br>Headlines</h1>
+            </div>
+              <div class="row row_news my-5">
+                <div class="col col-lg-5 my-3">
+                  <div class="headline-container m-2"  *ngIf = "top_headlines[3].urlToImage" >
+                      <img class="top_img img-fluid mb-0" src="{{ top_headlines[3].urlToImage }}">
+                      <div class="headline-info mt-0 p-3">
+                          <a  target="_blank" href="#"><h3 [routerLink]="['newspage',top_headlines[3].id]" class="m-3 headline-title">{{ top_headlines[3].title }} </h3></a>
+                          <a  target="_blank" [routerLink]="['newspage',top_headlines[3].id]" class="headline-link m-3" href="{{ top_headlines[3].url }}">Read More</a>
+                      </div>
+                  </div>
+                </div>
+                <div class="col col-lg-5 my-3">
+                  <div class="headline-container m-2"  *ngIf = "top_headlines[2].urlToImage" >
+                      <img class="top_img img-fluid mb-0" src="{{ top_headlines[2].urlToImage }}">
+                      <div class="headline-info mt-0 p-3">
+                          <a href="#" target="_blank"><h3 routerLink="tech" class="m-3 headline-title">{{ top_headlines[2].title }} </h3></a>
+                          <a  target="_blank" [routerLink]="['newspage',top_headlines[2].id]" class="headline-link m-3" href="{{ top_headlines[2].url }}">Read More</a>
+                      </div>
+                  </div>
+                </div>
+              </div>
+
+              <button id="pop_row_toggler" class="btn btn-dark see-more" type="button" data-bs-toggle="collapse" data-bs-target="#collapse-row" aria-expanded="false" aria-controls="collapse-row">See More</button>
+                    <div class="row g-4 align-items-center row_news collapse my-5" id="collapse-row">
+                        <div class="col col-lg-5 my-3" *ngFor="let news of top_headlines">
+                            <div class="headline-container m-2"  *ngIf = "news.urlToImage" >
+                                <img class="top_img img-fluid mb-0" src="{{ news.urlToImage }}">
+                                <div class="headline-info mt-0 p-3">
+                                    <a target="_blank" href="#"><h3 [routerLink]="['newspage',news.id]" class="m-3 headline-title">{{ news.title }} </h3></a>
+                                    <a target="_blank" [routerLink]="['newspage',news.id]" class="headline-link m-3" href="{{ news.url }}">Read More</a>
+                                </div>
+                            </div>
+                    </div>
+              </div>
+          </div>
+    </body>
+
+    <footer class="foot p-5">
+      <p class="text-white text-center">
+        &copy; NewsLand Website Written By Rose Miller
+      </p>
+    </footer>
+</html>
